@@ -1,0 +1,134 @@
+; imm8 to reg8
+mov %op1, op2
+
+; imm32 to reg32
+movl %op1, op2, op3, op4, op5
+
+; reg8 to mem8
+mov $op1, %op2
+
+; reg32 to mem32
+movl $op1, %op2
+
+; mem8 to reg8
+mov %op1, $op2
+
+; mem32 to reg32
+movl %op1, $op2
+
+; reg8 to reg8
+mov %op1, %op2
+
+; reg32 to reg32
+movl %op1, %op2
+
+; reg32 to mem(reg32)
+movl [%op1], %op2
+
+; mem(reg32) to reg32
+movl %op1, [%op2]
+
+; ADD8
+add %op1, %op2, %op3
+
+; SUB8
+sub %op1, %op2, %op3
+
+; DIV8
+div %op1, %op2, %op3
+
+; MULT8
+mul %op1, %op2, %op3
+
+; ADD32
+addl %op1, %op2, %op3
+
+; SUB32
+subl %op1, %op2, %op3
+
+; DIV32
+divl %op1, %op2, %op3
+
+; MULT32
+mull %op1, %op2, %op3
+
+; JMP
+jmp op1
+
+; JEQ
+je op1, op2, op3, op4
+
+; JNE
+jne op1, op2, op3, op4
+
+; JLT
+jlt op1, op2, op3, op4
+
+; JGT
+jgt op1, op2, op3, op4
+
+; JLE
+jle op1, op2, op3, op4
+
+; JGE
+jge op1, op2, op3, op4
+
+; AND8
+and %op1, %op2, %op3
+
+; OR8
+or %op1, %op2, %op3
+
+; NOT8
+not %op1, %op2
+
+; XOR8
+xor %op1, %op2, %op3
+
+; CMP8
+cmp %op1, %op2
+
+; AND32
+andl %op1, %op2, %op3
+
+; OR32
+orl %op1, %op2, %op3
+
+; NOT32
+notl %op1, %op2
+
+; XOR32
+xorl %op1, %op2, %op3
+
+; CMP32
+cmpl %op1, %op2
+
+; INC8
+inc %op1
+
+; DEC8
+dec %op1
+
+; SHL8
+shl %op1, %op2, %op3
+
+; SRL8
+srl %op1, %op2, %op3
+
+; INC32
+incl %op1
+
+; DEC32
+decl %op1
+
+; SHL32
+shll %op1, %op2, %op3
+
+; SRL32
+srll %op1, %op2, %op3
+
+; HLT
+halt
+
+; imm8 to memory8
+mov [%op1], op2
